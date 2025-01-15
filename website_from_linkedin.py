@@ -78,9 +78,9 @@ def process_links(csv_file, output_file):
                 print(f"Error processing {linkedin_url}: {e}")
             finally:
                 driver.quit()  # Close the WebDriver after processing each company
-3`4`
+
 if __name__ == "__main__":
-    input_csv = "LinkedIn Scrapped - React Native - USA.csv"  # Replace with your input CSV file name
-    output_csv = "React Native - USA_website.csv"  # Replace with your desired output CSV file name
+    input_csv = "input"  # Replace with your input CSV file name
+    output_csv = "ouput_website.csv"  # Replace with your desired output CSV file name
 
     process_links(input_csv, output_csv)
